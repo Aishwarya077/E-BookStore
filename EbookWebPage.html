@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Nest</title>
+    <link rel="stylesheet" href="ebook.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #e84619;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .book {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .book img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        #login-form {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Stroy Nest</h1>
+        <button onclick="showStartReading()">Start Reading</button>
+    </header>
+        </form>
+    </div>
+    <p><h1>Genre</h1></p>
+    <div class="navbar">
+    <p><a href="./Romance.html">Romance</a></p>
+    <p><a href="./Horror.html">Horror</a></p>
+    <p><a href="./Space.html">Space</a></p>
+    <p><a href="./Mystry.html">Mystry</a></p>
+    <p><a href="./History.html">History</a></p>
+    <h1>Top 5 recommendations</h1>
+</div>
+    <div class="container">
+        <div class="book">
+            <img src="Romance.jpeg" alt="Twisted Love">
+            <h3>Twisted Love</h3>
+            <p>ANNA HUANG</p>
+            <button onclick="readBook('Book 1')">Read</button>
+        </div>
+        <div class="book">
+            <img src="Mystry.jpeg" alt="The Silent Patient">
+            <h3>The Silent Patient</h3>
+            <p>ALEC MICHAELIDES</p>
+            <button onclick="readBook('Book 2')">Read</button>
+        </div>
+        <div class="book">
+            <img src="Horror.jpeg" alt="The Balled of Black Tom">
+            <h3>The Balled of Black Tom</h3>
+            <p>VICTOR LAVALLE</p>
+            <button onclick="readBook('Book 2')">Read</button>      
+    </div>
+    <div class="book">
+        <img src="Space.jpeg" alt="The Universe in you'r Hand">
+        <h3>The Universe in you'r Hand</h3>
+        <p>CHRISTOPHE GALFERD</p>
+        <button onclick="readBook('Book 2')">Read</button>
+    </div>
+    <div class="book">
+        <img src="History.jpeg" alt="The Last Mughal">
+        <h3>The Last Mughal</h3>
+        <p>WILLIAM DALRYMPLE</p>
+        <button onclick="readBook('Book 2')">Read</button>
+    
+    <script>
+        // JavaScript functions for interactivity
+        function showLoginForm() {
+            const loginForm = document.getElementById('login-form');
+            loginForm.style.display = 'block';
+        }
+
+        function readBook(bookTitle) {
+            // In a real implementation, this function would load the book content
+            alert(`Opening ${bookTitle} for reading. This is a simulation.`);
+        }
+    </script>
+</body>
+</html>
